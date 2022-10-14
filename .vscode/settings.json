@@ -1,0 +1,14 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.languageServer": "Pylance",
+    "python.analysis.stubPath": "/home/jeremias/.cache/fakegir",
+    "cSpell.language": "en,de-DE,de,lorem,en-US,en-GB",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": false,
+    "cSpell.words": [
+        "accels",
+        "gresource",
+        "localdir",
+        "pkgdatadir"
+    ]
+}
