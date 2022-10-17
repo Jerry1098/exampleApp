@@ -25,5 +25,5 @@ if __name__ == '__main__':
     # resource = Gio.Resource.load(os.path.join(pkgdatadir, 'exampleProgram.gresource'))
     # resource._register()
 
-    from main import main
+    from src.main import main
     sys.exit(main(VERSION))  # type: ignore

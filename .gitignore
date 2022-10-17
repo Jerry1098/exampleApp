@@ -1,5 +1,4 @@
-__pycache__/example_program.cpython-310.pyc
-__pycache__/main_window.cpython-310.pyc
-__pycache__/main.cpython-310.pyc
-__pycache__/webkit_window.cpython-310.pyc
 venv/*
+__pycache__/*
+src/simple_examples/__pycache__/*
+src/__pycache__/*

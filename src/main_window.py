@@ -1,6 +1,7 @@
 from gi.repository import Gtk, Gio
 
-from webkit_window import WebKitWindow
+from src.simple_examples.dialog import ExampleDialog
+from src.simple_examples.webkit_window import WebKitWindow
 
 class MainWindow(Gtk.ApplicationWindow):
     
@@ -20,11 +21,27 @@ class MainWindow(Gtk.ApplicationWindow):
         to_webkitWindow_button = Gtk.Button(label='Show WebkitExample')
         to_webkitWindow_button.connect('clicked', self.to_webkitWindow)
 
+        show_dialog_button = Gtk.Button(label='Show Dialog')
+        show_dialog_button.connect('clicked', self.show_dialog)
+
         # grid.attach(show_notification_button, 0, 0, 1, 1)
         grid.add(show_notification_button)
         grid.add(to_webkitWindow_button)
+        grid.add(show_dialog_button)
 
         return grid
+
+
+    def show_dialog(self, _):
+        dialog = ExampleDialog(self)
+        response = dialog.run()
+
+        if response == Gtk.ResponseType.OK:
+            print("Ok button wurde gedrückt")
+        elif response == Gtk.ResponseType.CANCEL:
+            print('Cancel button wurde gedrückt')
+
+        dialog.destroy()
 
     
     def to_webkitWindow(self, _):

@@ -1,7 +1,7 @@
 import sys
 from gi.repository import Gtk, Gio
-from main_window import MainWindow
-from webkit_window import WebKitWindow
+from src.main_window import MainWindow
+from src.simple_examples.webkit_window import WebKitWindow
 
 
 
